@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Quizz</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="script.js" defer></script> <!-- You can use 'defer' so that it's not needed to put in the end of the HTML -->
+</head>
+<body>
+
+    <h1 id="main-title">Programming Quizz</h1>
+
+    <!-- SCOREBOARD -->
+    <div id="score-container" class="hide">
+          <h2>Congratulations</h2>
+          <p id="display-score"><span>90</span>%</p>
+          <p>You've got <span id="correct-answers">0</span> out of <span id="questions-qty">10</span> questions</p>
+          <button id="restart">Try again!</button>
+    </div>
+
+    <!-- QUIZZ CONTAINER -->
+    <div id="quizz-container">
+      <p id="question">
+          <span id="question-number">1</span> - <span id="question-text">What is the measure unit to meters?</span>
+      </p>
+      <div id="answers-box">
+          <button><span class="btn-letter">a</span> <span class="question-answer">m</span></button>
+          <button><span class="btn-letter">b</span> <span class="question-answer">km</span></button>
+          <button><span class="btn-letter">c</span> <span class="question-answer">ms</span></button>
+          <button><span class="btn-letter">d</span> <span class="question-answer">r</span></button>
+      </div>
+    </div>
+
+    <!-- ANSWER TEMPLATE -->
+    <button class="answer-template hide"><span class="btn-letter">a</span> <span class="question-answer">m</span></button>
+
+    <footer>
+        
+        <h3>Developed by: <a href="https://www.linkedin.com/in/gabriel-gelbcke-874930159/" target="_blank">Gabriel Gelbcke</a> ©</h3>
+    </footer>
+
+</body>
+</html>
